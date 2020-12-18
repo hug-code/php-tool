@@ -1,0 +1,32 @@
+{
+    "name": "hug-code/php-tool",
+    "description": "一些实用的php常用方法，以及一些关于面向对象开发时的基础类",
+    "type": "library",
+    "homepage": "http://www.hug-code.cn/",
+    "minimum-stability":"dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "无痕",
+            "email": "1762910894@qq.com",
+            "homepage": "http://www.hug-code.cn/"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "HugCode\\PhpTool\\": "src"
+        },
+        "files": [
+            "functions/array.php",
+            "functions/file_dir.php",
+            "functions/response.php",
+            "functions/tools.php",
+            "functions/times.php",
+            "functions/validate.php"
+        ]
+    }
+}
