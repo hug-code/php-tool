@@ -21,11 +21,8 @@
             "HugCode\\PhpTool\\": "src"
         },
         "files": [
-            "functions/array.php",
             "functions/file_dir.php",
-            "functions/response.php",
             "functions/tools.php",
-            "functions/times.php",
             "functions/validate.php"
         ]
     }
