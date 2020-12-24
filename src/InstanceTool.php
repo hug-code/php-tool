@@ -11,7 +11,7 @@ namespace HugCode\PhpTool;
 trait InstanceTool
 {
 
-    public $params = [];
+    public $params;
 
     /**
      * Instances of the derived classes.
