@@ -21,6 +21,17 @@ trait InstanceTool
 
 
     /**
+     * set params
+     * @param $params
+     * @return $this
+     */
+    public function setParams($params)
+    {
+        $this->params = $params;
+        return $this;
+    }
+
+    /**
      * Get instance of the derived class.
      * @param array $params
      * @return static
