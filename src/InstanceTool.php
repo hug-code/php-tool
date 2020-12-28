@@ -42,9 +42,7 @@ trait InstanceTool
         if (!isset(self::$instances[$className])) {
             self::$instances[$className] = new $className;
         }
-        if (!empty($params)) {
-            self::$instances[$className]->params = $params;
-        }
+        self::$instances[$className]->params = $params;
         return self::$instances[$className];
     }
 
