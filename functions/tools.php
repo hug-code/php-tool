@@ -108,33 +108,6 @@ if (!function_exists('_array_field')) {
 }
 
 /**
- * CMF密码加密方法
- * @param string $password 要加密的字符串
- * @param string $key 加密秘钥
- * @return string
- */
-if (!function_exists('_generate_password')) {
-    function _generate_password($password = '', $key = '')
-    {
-        return "###" . md5(md5($password . $key));
-    }
-}
-
-/**
- * CMF密码比较方法,所有涉及密码比较的地方都用这个方法
- * @param string $password 要比较的密码
- * @param string $passwordInDb 数据库保存的已经加密过的密码
- * @param string $key 加密秘钥
- * @return boolean 密码相同，返回true
- */
-if (!function_exists('_validate_password')) {
-    function _validate_password($password = '', $passwordInDb = '', $key = '')
-    {
-        return _generate_password($password, $key) == $passwordInDb;
-    }
-}
-
-/**
  * @Desc 产生随机字串
  * @param int $len 长度
  * @param string $type 字串类型  0字母 1数字 2大写字母 3小写字母
@@ -142,8 +115,8 @@ if (!function_exists('_validate_password')) {
  * @return false|string
  * @author yashuai
  */
-if (!function_exists('_randString')) {
-    function _randString($len = 6, $type = '', $addChars = '')
+if (!function_exists('_rand_string')) {
+    function _rand_string($len = 6, $type = '', $addChars = '')
     {
         switch ($type) {
             case 0:
@@ -168,5 +141,4 @@ if (!function_exists('_randString')) {
         $chars = str_shuffle($chars);
         return substr($chars, 0, $len);
     }
-
 }

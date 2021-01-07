@@ -14,11 +14,12 @@
     ],
     "require": {
         "php": ">=7.0",
-        "ext-curl": "*"
+        "ext-curl": "*",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
-            "HugCode\\PhpTool\\": "src"
+            "HugCode\\PhpTool\\": ""
         },
         "files": [
             "functions/file_dir.php",
