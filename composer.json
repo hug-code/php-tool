@@ -22,9 +22,9 @@
             "HugCode\\PhpTool\\": ""
         },
         "files": [
-            "functions/file_dir.php",
-            "functions/tools.php",
-            "functions/validate.php"
+            "Functions/file_dir.php",
+            "Functions/tools.php",
+            "Functions/validate.php"
         ]
     }
 }
